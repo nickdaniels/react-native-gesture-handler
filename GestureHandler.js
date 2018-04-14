@@ -390,6 +390,9 @@ function createNativeWrapper(Component, config = {}) {
 const WrappedScrollView = createNativeWrapper(ScrollView, {
   disallowInterruption: true,
 });
+const WrappedAnimatedScrollView = createNativeWrapper(Animated.ScrollView, {
+  disallowInterruption: true,
+});
 const WrappedSlider = createNativeWrapper(Slider, {
   shouldCancelWhenOutside: false,
   shouldActivateOnStart: true,
@@ -588,6 +591,7 @@ const FlatListWithGHScroll = props => (
 
 export {
   WrappedScrollView as ScrollView,
+  WrappedAnimatedScrollView as AnimatedScrollView,
   WrappedSlider as Slider,
   WrappedSwitch as Switch,
   WrappedTextInput as TextInput,
