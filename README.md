@@ -93,6 +93,7 @@ Here are a gesture recognizers currently available in the package:
 
 Whenever you use a native component that should handle touch events you can either wrap it with `NativeViewGestureHandler` or import wrapper component exported by the library instead of importing it from `react-native` package. Here is the list of available components:
  - `ScrollView`
+ - `AnimatedScrollView` (React Native `Animated.ScrollView`)
  - `Slider`
  - `Switch`
  - `TextInput`
