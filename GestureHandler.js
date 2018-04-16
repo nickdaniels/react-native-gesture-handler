@@ -590,6 +590,7 @@ const FlatListWithGHScroll = props => (
 );
 
 export {
+  createNativeWrapper,
   WrappedScrollView as ScrollView,
   WrappedAnimatedScrollView as AnimatedScrollView,
   WrappedSlider as Slider,
