@@ -349,8 +349,14 @@ function createNativeWrapper(Component, config = {}) {
     static propTypes = {
       ...Component.propTypes,
     };
+      
+    getNode = () => {
+      return this._wrappedComponent;
+    }
 
     _refHandler = node => {
+      this._wrappedComponent = node;
+
       // bind native component's methods
       for (let methodName in node) {
         const method = node[methodName];
